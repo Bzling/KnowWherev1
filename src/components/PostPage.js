@@ -3,7 +3,6 @@ import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import PostForm from './PostForm';
 import PrivateHeader from './PrivateHeader';
 
 
@@ -19,18 +18,6 @@ let axiosConfig = {
 },
   withCredentials: false
 };
-/**const PostPage = (props)=>(
-    
-    <div>
-    post page
-    <PrivateHeader onSubmit={this.onSubmit}/>
-    <PostForm />
-    </div>
-);
-
-
-export default PostPage; */
-
 class PostPage extends React.Component {
 
     constructor(props){
@@ -52,11 +39,6 @@ class PostPage extends React.Component {
         const text = e.target.value;
         this.setState({ postText: text})
     }
-    /*
-    onStatusChange(e){
-        const status = e.target.value;
-        this.setState({ status: status});
-    }*/
     onSubmit(e){
         e.preventDefault();
         console.log('onPostSubmit');

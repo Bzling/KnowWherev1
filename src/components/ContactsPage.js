@@ -101,10 +101,3 @@ const mapDispatchToProps = (dispatch) => ({
 
 export default connect(mapStateToProps, mapDispatchToProps)(ContactsPage);
 
-/**
- *                     <Button
-                    onClick={(friend)=>{this.props.getGroupname({friend}
-                    )
-                    this.props.history.push(`/chat`)
-                    }}>chat</Button>
- */
